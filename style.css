@@ -1,0 +1,72 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+
+  font-family: "Merriweather Sans"; 
+  font-size: 62.5%; /* 1rem = 16px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  font-size: 1.6rem; /* 25.6px */
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem; /* 32px */
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem; /* 1200px */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* 32px */
+}
+
+/* Personal structure styles - boxes 1 to 5 */
+.profile, .links, .skills, .experiences, .studies {
+  background-color: var(--bg-cards);
+  border-radius: 1rem; /* 16px */
+  padding: 2rem; /* 32px */
+  flex: auto;
+  min-width: 18.75rem; /* 300px */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; /* 32px */
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile .image img {
+  width: 150px; /* 9.37rem */
+  height: 150px;
+  margin-bottom: 1rem; /* 16px */
+}
+
+.profile h1 {
+  font-weight: 700;
+  font-size: 2.5rem; /* 40px */
+  line-height: 2rem; /* 32px */
+}
+
+.profile h2 {
+  font-weight: 300;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1rem; /* 16px */
+  margin-top: 1rem;
+}
