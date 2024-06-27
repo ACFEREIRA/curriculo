@@ -65,7 +65,7 @@ body {
 }
 
 .profile h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.5rem; /* 24px */
   line-height: 1rem; /* 16px */
   margin-top: 1rem;
@@ -103,9 +103,9 @@ body {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   font-weight: 400;
-  padding: 2rem 2rem;
+  padding: 3rem 4rem;
   justify-content: center;
 }
 
@@ -129,3 +129,24 @@ body {
   line-height: 1.3rem;
   color: #000000;
 }
+
+.experiences, .studies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 4rem;
+  justify-content: center;
+}
+
+.experience, .study {
+  padding-left: 4rem;
+}
+
+.experience h3, .study h3 {
+  font-size: 1.5rem;
+}
+
+.experience p, .study p {
+  font-size: 1.5rem;
+  font-weight: 400;
+} 
