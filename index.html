@@ -10,6 +10,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
   <title>Currículo</title>
 </head>
 
@@ -101,9 +102,9 @@
     <div class="public"><!-- boxes 6 to 10 -->
       <div class="my_projects">
         <h2>Meus projetos</h2>
-        <button class="open_menu">Ver todos</button>
+        <button class="open_menu" onclick="toogleMenu()">Ver todos</button>
         <div id="menu" class="menu">
-          <button class="close_menu">
+          <button class="close_menu" onclick="toogleMenu()">
             <i class="fa fa-times" aria-hidden="true"></i>
           </button>
           <nav>
@@ -127,8 +128,10 @@
             <p>5</p>
             <i class="fa fa-code-fork" aria-hidden="true"></i>
             <p>0</p>
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <p>JAVASCRIPT</p>
+            <div class="languages">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              <p>JAVASCRIPT</p>
+            </div>
           </div>
         </div>
         <div class="project_2">
@@ -142,18 +145,20 @@
             <p>4</p>
             <i class="fa fa-code-fork" aria-hidden="true"></i>
             <p>0</p>
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <p>HTML</p>
+            <div class="languages">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              <p>HTML</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="recent_posts">
         <h2>Posts Recentes</h2>
-        <button class="open_posts">
+        <button class="open_posts" onclick="togglePosts()">
           <i class="fa fa-sort-desc" aria-hidden="true"></i>
         </button>
         <div id="posts" class="posts">
-          <button class="close_posts">
+          <button class="close_posts" onclick="togglePosts()">
             <i class="fa fa-sort-asc" aria-hidden="true"></i>
           </button>
           <div class="post">
