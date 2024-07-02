@@ -17,12 +17,12 @@
 <body>
   <div class="container">
     <div class="personal"> <!-- boxes 1 to 5 -->
-      <div class="profile">
+      <div class="profile card">
         <div class="image"><img src="./assets/avatar-.png" alt="foto perfil com borda verde"></div>
         <h1>Ana Clara Matos Ferreira</h1>
         <h2>Aspirante a programadora Frontend</h2>
       </div>
-      <div class="links">
+      <div class="links card">
         <a
           href="https://www.google.com/maps/place/Uberaba,+MG/@-19.7534232,-47.949533,12z/data=!3m1!4b1!4m6!3m5!1s0x94bad03162627637:0x8e83d9edb0f8e15c!8m2!3d-19.7456327!4d-47.9385299!16zL20vMDZyN3lx?authuser=0&entry=ttu">
           <i class="fa fa-map-marker" aria-hidden="true"></i>Uberaba-MG</a>
@@ -36,7 +36,7 @@
         <a href="mailto:annacllara98@gmail.com"><i class="fa fa-envelope-o"
             aria-hidden="true"></i>annacllara98@gmail.com</a>
       </div>
-      <div class="skills">
+      <div class="skills card">
         <h2>Tecnologias</h2>
         <div class="skill_box">
           <div class="skill">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="experiences">
+      <div class="experiences card">
         <h2>Experiências</h2>
         <ul class="experience">
           <li>
@@ -74,7 +74,7 @@
           <p>Designer gráfico</p>
         </ul>
       </div>
-      <div class="studies">
+      <div class="studies card">
         <h2>Educação</h2>
         <ul class="study">
           <li>
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div class="public"><!-- boxes 6 to 10 -->
-      <div class="my_projects">
+      <div class="my_projects card">
         <h2>Meus projetos</h2>
         <button class="open_menu" onclick="toogleMenu()">Ver todos</button>
         <div id="menu" class="menu">
@@ -117,7 +117,7 @@
         </div>
       </div>
       <div class="projects">
-        <div class="project_1">
+        <div class="project_1 card">
           <div class="folder">
             <a href="https://acfereira.github.io/projeto-devlinks/"><i class="fa fa-folder-open-o"
                 aria-hidden="true"></i>projeto-devlinks</a>
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="project_2">
+        <div class="project_2 card">
           <div class="folder">
             <a href="https://acfereira.github.io/portfolio-2/"><i class="fa fa-folder-open-o"
                 aria-hidden="true"></i>portfolio-2</a>
@@ -153,22 +153,27 @@
         </div>
       </div>
       <div class="recent_posts">
-        <h2>Posts Recentes</h2>
-        <button class="open_posts" onclick="togglePosts()">
-          <i class="fa fa-sort-desc" aria-hidden="true"></i>
-        </button>
-        <div id="posts" class="posts">
+        <div class="recent_posts_title card ">
+          <h2>Posts Recentes</h2>
+          <button class="open_posts" onclick="togglePosts()">
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+          </button>
           <button class="close_posts" onclick="togglePosts()">
             <i class="fa fa-sort-asc" aria-hidden="true"></i>
           </button>
-          <div class="post">
+        </div>
+        <ol id="posts" class="posts">
+          <li class="post card">
             <img src="./assets/avatar.png" alt="foto perfil">
             <h4>Graduada em Sistemas de Informação pela Universidade de Uberaba (UNIUBE). Atualmente, estou
               aprofundando
-              meus conhecimentos em programação web com HTML5, CSS e JavaScript. Confira meus projetos no <a
-                href="https://github.com/ACFEREIRA" target="_blank">GitHub</a>.</h4>
-          </div>
-        </div>
+              meus conhecimentos em programação web com HTML5, CSS e JavaScript.
+              <p>Confira meus projetos no <a href="https://github.com/ACFEREIRA" target="_blank">GitHub</a>.
+              </p>
+              <span>#programação #iniciante #HTML #JAVASCRIPT #CSS #desenvolvimento #web</span>
+            </h4>
+          </li>
+        </ol>
 
       </div>
     </div>
