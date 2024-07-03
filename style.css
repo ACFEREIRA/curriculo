@@ -80,6 +80,13 @@ body {
   align-items: center;
   text-decoration: none;
   width: 100%;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+.links a:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .links i {
@@ -164,6 +171,13 @@ body {
   background: none;
   border: none;
   display: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+.open_menu:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .menu {
@@ -185,6 +199,13 @@ body {
   display: flex;
   color: inherit;
   text-decoration: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+.menu nav a:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .close_menu {
@@ -192,6 +213,13 @@ body {
   background: none;
   border: none;
   font-size: 2rem;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+.close_menu:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .projects {
@@ -204,6 +232,12 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project_1:hover, .project_2:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project_1 p , .project_2 p {
@@ -217,6 +251,13 @@ body {
   font-size: 2rem;
   line-height: 1.3rem ;
   align-items: center;
+  transition: color 0.4s ease, transform 0.4s;
+  transform-origin: left;
+}
+
+.folder a:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .folder i {
@@ -281,6 +322,13 @@ body {
   background: none;
   border: none;
   display: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+.open_posts:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .close_posts {
@@ -290,6 +338,13 @@ body {
   background: none;
   border: none;
   display: flex;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+.close_posts:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 
@@ -324,6 +379,13 @@ body {
 .post a {
   font-size: 1.5rem;
   font-weight: 700;
+  transition: color 0.4s ease, transform 0.4s ease;
+  transform-origin: left; 
+}
+
+.post a:hover {
+  color: var(--bg-techs);
+  transform: scale(1.15);
 }
 
 .post span {
