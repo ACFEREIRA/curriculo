@@ -39,6 +39,7 @@ body {
   min-width: 300px;
 }
 
+/* Personal structure styles - boxes 1 to 5 */
 .profile {
   display: flex;
   flex-direction: column;
@@ -151,6 +152,7 @@ body {
   font-weight: 500;
 } 
 
+/* Public structure styles - boxes 6-10 */
 .public {
   margin-left: 2rem;
 }
@@ -393,3 +395,80 @@ body {
   font-size: 1.5rem;
 }
 
+/* media queries */
+@media only screen and (max-width: 1030px) {
+  .body {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    min-width: 100%;
+  }
+
+  .profile .image img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .projects {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .body {
+    padding: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .public {
+    margin-left: 0;
+  }
+
+  .my_projects {
+    margin-top: 2rem;
+  }
+
+  .skill_box {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .skill {
+    font-size: 1rem;
+  }
+
+}
