@@ -104,13 +104,12 @@
       <div class="my_projects">
         <div class="my_projects_title card ">
           <h2>Meus projetos</h2>
-          <button class="open_menu" onclick="toogleMenu()">Ver todos</button>
-          <button class="close_menu" onclick="toogleMenu()">
+          <button id="open_menu" class="open_menu" onclick="toogleMenu()">Ver todos</button>
+          <button id="close_menu" class="close_menu" onclick="toogleMenu()">
             <i class="fa fa-times" aria-hidden="true"></i>
           </button>
         </div>
         <div id="menu" class="menu card">
-
           <nav>
             <a href="https://acfereira.github.io/portfolio/" target="_blank">Portfolio A</a>
             <a href="https://acfereira.github.io/portfolio-2/" target="_blank">Portfolio B</a>
@@ -159,14 +158,14 @@
       <div class="recent_posts">
         <div class="recent_posts_title card ">
           <h2>Posts Recentes</h2>
-          <button class="open_posts" onclick="togglePosts()">
+          <button id="open_posts" class="open_posts" onclick="openPosts()">
             <i class="fa fa-sort-desc" aria-hidden="true"></i>
           </button>
-          <button class="close_posts" onclick="togglePosts()">
+          <button id="close_posts" class="close_posts" onclick="openPosts()">
             <i class="fa fa-sort-asc" aria-hidden="true"></i>
           </button>
         </div>
-        <ol id="posts" class="posts">
+        <ol id="posts_recent" class="posts">
           <li class="post card">
             <img src="./assets/avatar.png" alt="foto perfil">
             <h4>Graduada em Sistemas de Informação pela Universidade de Uberaba (UNIUBE). Atualmente, estou

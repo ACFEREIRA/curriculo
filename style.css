@@ -172,7 +172,7 @@ body {
   cursor: pointer;
   background: none;
   border: none;
-  display: none;
+  display: flex;
   transition: color 0.4s ease, transform 0.4s ease;
   transform-origin: left;
 }
@@ -183,7 +183,7 @@ body {
 }
 
 .menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: relative;
   margin-top: 2rem;
@@ -211,6 +211,7 @@ body {
 }
 
 .close_menu {
+  display: none;
   cursor: pointer;
   background: none;
   border: none;
@@ -323,7 +324,7 @@ body {
   cursor: pointer;
   background: none;
   border: none;
-  display: none;
+  display: flex;
   transition: color 0.4s ease, transform 0.4s ease;
   transform-origin: left;
 }
@@ -339,7 +340,7 @@ body {
   cursor: pointer;
   background: none;
   border: none;
-  display: flex;
+  display: none;
   transition: color 0.4s ease, transform 0.4s ease;
   transform-origin: left;
 }
@@ -353,6 +354,7 @@ body {
 .posts {
   align-items: center;
   margin-top: 2rem;
+  display: none;
 }
 
 .post {
