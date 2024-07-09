@@ -21,15 +21,14 @@ body {
   color: var(--text-color);
   font-style: normal;
   font-size: 1.6rem; /* 25.6px */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  padding: 2rem; /* 32px */
 }
 
 .container {
   display: flex;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .card {
@@ -118,7 +117,7 @@ body {
 }
 
 .skill {
-  width: 10.5rem;
+  max-width: 10.5rem;
   height: 2.5rem;
   background: var(--bg-techs);
   border-radius: 3rem;
@@ -155,6 +154,9 @@ body {
 /* Public structure styles - boxes 6-10 */
 .public {
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .my_projects {
@@ -355,6 +357,7 @@ body {
   align-items: center;
   margin-top: 2rem;
   display: none;
+  /* max-width: 620px; */
 }
 
 .post {
@@ -448,7 +451,14 @@ body {
 
   .skill_box {
     display: flex;
-    gap: 2rem;
+  }
+
+  .skill {
+    width: 10.5rem;
+  }
+
+  .posts {
+    min-width: 100%;
   }
 }
 
